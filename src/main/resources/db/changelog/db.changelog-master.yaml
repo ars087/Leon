@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0
+      author: Arsen Azaryan
+  - include:
+      file: v-1.0/db.changelog-v.1.yaml
+      relativeToChangelogFile: true
+
+
+
+
+

@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Arsen Azaryan
+      changes:
+        - sqlFile:
+            endDelimiter: next
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            encoding: "UTF-8"
+            path: create-table-event.sql
+      rollback:
+        - sqlFile:
+            endDelimiter: next
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+            encoding: "UTF-8"
+            path: drop-table.sql
